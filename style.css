@@ -1,0 +1,516 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.conteneur {
+    width: 100%;
+    height: 100%;
+   overflow: hidden;
+}
+
+.block1 {
+    height: 90vh;
+    width: 100%;
+    place-content: center;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 35px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./bg-hero-desktop.svg);
+    background-color: hsl(322, 100%, 98%);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    overflow-x: hidden;
+    padding: 50px;
+
+}
+
+.svg {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    place-content: center;
+    justify-content: space-between;
+    /* position: relative;  */
+}
+
+.illustration {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: hsl(322, 100%, 76%);
+}
+
+.block2 {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    margin-bottom: 35px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    flex-direction: row-reverse;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    gap: 5rem;
+}
+
+.div2 img {
+    height: auto;
+    max-width: 70%;
+    width: 80rem;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.div2 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.div3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.div3 h2 {
+    max-width: 780px;
+    font-size: 60px;
+    top: 10rem;
+}
+
+.div3 p {
+    max-width: 780px;
+    font-size: 20px;
+    top: 10rem;
+    line-height: 1.5;
+    color: rgb(40, 38, 38);
+}
+
+.bloc3 {
+    width: 25%;
+    height: 12vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 60rem;
+    top: 255rem;
+    background-color: #ffff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+
+.element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.bottom-logo {
+    width: 10rem;
+    height: 15rem;
+}
+
+.bottom-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.address {
+    width: 50%;
+}
+
+.localisation,
+.email,
+.phone {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+.about a {
+    text-decoration: none;
+    color: white;
+    line-height: 40px;
+}
+
+.about a:hover {
+    color: hsl(322, 100%, 66%);
+}
+
+.about li {
+    list-style: none;
+
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+}
+
+.icon:hover {
+    color: hsl(322, 100%, 66%);
+    cursor: pointer;
+}
+
+.icon i {
+    font-size: 24px;
+}
+
+.copy {
+    text-align: end;
+    padding: 20px;
+    font-size: 20px;
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+}
+
+/* ==================== DESKTOP 1440px ==================== */
+@media screen and (max-width: 1440px) {
+    .block1 {
+        padding: 40px;
+    }
+
+    .div3 h2 {
+        font-size: 50px;
+    }
+
+    .div3 p {
+        font-size: 18px;
+    }
+
+    .bloc3 {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30%;
+        top: 250rem;
+    }
+
+    .block2 {
+        gap: 3rem;
+        padding: 20px;
+    }
+
+    .div2 img {
+        max-width: 80%;
+    }
+}
+
+/* ==================== TABLET 768px ==================== */
+@media screen and (max-width: 768px) {
+    .block1 {
+        height: auto;
+        padding: 30px 20px;
+        background-image: url(./bg-hero-mobile.svg);
+    }
+
+    .svg {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .svg img {
+        width: 150px;
+    }
+
+    .try {
+        padding: 8px 30px;
+        font-size: 14px;
+    }
+
+    .illustration {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .div3 {
+        align-items: center;
+        text-align: center;
+    }
+
+    .div3 h1 {
+        font-size: 28px;
+    }
+
+    .div3 h2 {
+        font-size: 32px;
+    }
+
+    .div3 p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .div2 img {
+        max-width: 90%;
+        width: 100%;
+    }
+
+    .div2 {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .block2 {
+        flex-direction: column;
+        height: auto;
+        gap: 2rem;
+        padding: 40px 20px;
+    }
+
+    .bloc3 {
+        position: relative;
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -50px;
+        height: auto;
+        padding: 30px 20px;
+        margin-bottom: -30px;
+    }
+
+    .bloc3 h2 {
+        font-size: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 80px 20px 20px;
+        gap: 30px;
+    }
+
+    .element {
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .bottom-logo {
+        width: 200px;
+        height: auto;
+    }
+
+    .address {
+        width: 100%;
+    }
+
+    .localisation,
+    .email,
+    .phone {
+        width: 100%;
+    }
+
+    .about {
+        text-align: center;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+
+    .copy {
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+/* ==================== MOBILE 320px ==================== */
+@media screen and (max-width: 425px) {
+    .block1 {
+        padding: 20px 15px;
+        margin-bottom: 20px;
+    }
+
+    .svg img {
+        width: 120px;
+    }
+
+    .try {
+        padding: 6px 20px;
+        font-size: 12px;
+        border-radius: 15px;
+    }
+
+    .div3 h1 {
+        font-size: 24px;
+    }
+
+    .div3 h2 {
+        font-size: 24px;
+    }
+
+    .div3 p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    button {
+        padding: 12px 40px;
+        font-size: 14px;
+        border-radius: 25px;
+    }
+
+    .block2 {
+        margin-bottom: 20px;
+        padding: 30px 15px;
+    }
+
+    .bloc3 {
+        width: 90%;
+        padding: 25px 15px;
+    }
+
+    .bloc3 h2 {
+        font-size: 18px;
+    }
+
+    footer {
+        padding: 60px 15px 15px;
+    }
+
+    .element {
+        gap: 25px;
+    }
+
+    .bottom-logo {
+        width: 150px;
+    }
+
+    .localisation p,
+    .email p,
+    .phone p {
+        font-size: 14px;
+    }
+
+    .about a {
+        font-size: 14px;
+        line-height: 35px;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon i {
+        font-size: 20px;
+    }
+
+    .copy {
+        font-size: 12px;
+        padding: 15px;
+    }
+}
+
+/* ==================== TRÈS PETIT MOBILE 320px ==================== */
+@media screen and (max-width: 320px) {
+    .block1 {
+        padding: 15px 10px;
+    }
+
+    .svg img {
+        width: 100px;
+    }
+
+    .try {
+        padding: 5px 15px;
+        font-size: 11px;
+    }
+
+    .div3 h1 {
+        font-size: 20px;
+    }
+
+    .div3 h2 {
+        font-size: 20px;
+    }
+
+    .div3 p {
+        font-size: 13px;
+    }
+
+    button {
+        padding: 10px 30px;
+        font-size: 12px;
+    }
+
+    .bloc3 {
+        width: 95%;
+        padding: 20px 10px;
+    }
+
+    .bloc3 h2 {
+        font-size: 16px;
+    }
+
+    .localisation,
+    .email,
+    .phone {
+        gap: 15px;
+    }
+
+    .copy {
+        font-size: 10px;
+    }
+}
